@@ -28,3 +28,9 @@ VALUES ('Leonel','Messi',1337, 5), ('Cristiano','Ronaldo', 17, 5), ('Zlatan', 'I
 
 INSERT INTO ninjas (first_name, last_name, age, ninjas.dojo_id)
 VALUES ('Max', 'Verstappen', 25, 6), ('Lewis', 'Hamilton', 31, 6), ('Daniel', 'Ricciardo', 28, 6);
+
+-- //// Retrieve all the ninjas from the first dojo ////////
+
+SELECT * FROM ninjas
+WHERE ninjas.dojo_id = 4;
+
