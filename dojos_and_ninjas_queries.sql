@@ -43,4 +43,4 @@ WHERE ninjas.dojo_id = 6;
 
 SELECT ninjas.first_name, ninjas.last_name, dojos.name FROM dojos
 JOIN ninjas ON dojos.id = ninjas.dojo_id 
-WHERE ninjas.id = 6;
+WHERE ninjas.id = (SELECT ninjas.id FROM ninjas ORDER BY ninjas.id DESC LIMIT 1)
