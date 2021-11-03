@@ -13,3 +13,7 @@ VALUES ('New York'), ('Boston'), ('Miama');
 DELETE FROM dojos 
 WHERE id = 1 or id = 2 or id = 3;
 
+-- //// Create 3 more dojos ////////
+
+INSERT INTO dojos (name)
+VALUES ('Seattle'), ('San Francisco'), ('Los Angeles');
