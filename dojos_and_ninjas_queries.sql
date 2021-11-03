@@ -34,3 +34,13 @@ VALUES ('Max', 'Verstappen', 25, 6), ('Lewis', 'Hamilton', 31, 6), ('Daniel', 'R
 SELECT * FROM ninjas
 WHERE ninjas.dojo_id = 4;
 
+-- //// Retrieve all the ninjas from the last dojo ////////
+
+SELECT * FROM ninjas
+WHERE ninjas.dojo_id = 6;
+
+-- //// Retrieve the last ninja's dojo ////////
+
+SELECT ninjas.first_name, ninjas.last_name, dojos.name FROM dojos
+JOIN ninjas ON dojos.id = ninjas.dojo_id 
+WHERE ninjas.id = 6;
